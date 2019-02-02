@@ -24,3 +24,5 @@ yarn-debug.log*
 .yarn-integrity
 
 /db/mysql
+/tmp
+/log
