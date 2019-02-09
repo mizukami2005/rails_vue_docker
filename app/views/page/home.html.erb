@@ -1,5 +1,18 @@
 <div id="hello">
-  <p>{{message}}</p>
+  <app :blogs="<%= @blogs.to_json(only: %i[id title]) %>"></app>
 </div>
+
+<% @blogs.each do |blog| %>
+  <div class="row">
+    <div class="col s4 m6">
+      <div class="card">
+        <span class="card-title">
+          <%= blog.title %>
+        </span>
+      </div>
+    </div>
+  </div>
+<% end %>
+
 <p>Find me in app/views/page/home.html.erb</p>
 <%= javascript_pack_tag 'hello_vue' %>

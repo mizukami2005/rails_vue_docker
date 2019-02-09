@@ -8,12 +8,11 @@
 //import Vue from 'vue'
 //import App from '../app.vue'
 import Vue from 'vue/dist/vue.esm'
+import App from '../components/app.vue'
 
-const app = new Vue({
+new Vue({
   el: '#hello',
-  data: {
-    message: "Can you say hello?"
-  }
+  components: { App }
 })
 
 //document.addEventListener('DOMContentLoaded', () => {
