@@ -1,3 +1,15 @@
+<div class="search">
+  <div class="image">
+    <img src="https://placehold.jp/300x300.png" style="width: 90vw; height: 90vh; margin: 0 auto;">
+  </div>
+  <div class="image">
+    <img src="https://placehold.jp/300x300.png" style="width: 90vw; height: 90vh; margin: 0 auto;">
+  </div>
+  <div class="image">
+    <img src="https://placehold.jp/300x300.png" style="width: 90vw; height: 90vh; margin: 0 auto;">
+  </div>
+</div>
+
 <div id="hello">
   <app :blogs="<%= @blogs.to_json(only: %i[id title]) %>"></app>
 </div>
@@ -7,12 +19,11 @@
     <div class="col s4 m6">
       <div class="card">
         <span class="card-title">
-          <%= blog.title %>
+          <%= blog.title %>ｓ
         </span>
       </div>
     </div>
   </div>
 <% end %>
 
-<p>Find me in app/views/page/home.html.erb</p>
 <%= javascript_pack_tag 'hello_vue' %>
